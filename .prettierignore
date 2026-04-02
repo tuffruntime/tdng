@@ -1,0 +1,11 @@
+# Hugo folders
+resources/
+public/
+static/
+
+# Node
+node_modules/
+
+# Minified files
+*.min.scss
+*.min.css

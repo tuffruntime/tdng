@@ -1,0 +1,54 @@
+@use "common" as *;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: .25rem solid $primaryColor; // Signature Neo-Brutalist Border
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; // Space between items
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: "JetBrains Mono", monospace; // Matches your NvChad setup
+
+        color: $primaryColor;
+        background-color: $white;
+
+        // The Signature Neo-Brutalist Border
+        border: $border-4;
+
+        // Hard Shadow (No blur)
+        box-shadow: 5px 5px 0px $primaryColor;
+
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          // background-color: $backgroundColor;
+          // Moves up and left to "grow" the shadow
+          transform: translate(-3px, -3px);
+          box-shadow: 8px 8px 0px $primaryColor;
+        }
+
+        &:active {
+          // "Pressed" state: moves down and right, shadow disappears
+          transform: translate(5px, 5px);
+          box-shadow: 0px 0px 0px $primaryColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use "common" as *;
+// Header
+@use "elements/header";
+@use "elements/logo";
+
+// Elements
+@use "elements/brutal-card";
+@use "elements/brutal-box";
+
+* {
+  background-color: $backgroundColor;
+  color: $primaryColor;
+}
+

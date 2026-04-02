@@ -1,0 +1,70 @@
+@use "common" as *;
+
+.brutalist-card {
+  background-color: #ffffff; // Stark white for the card face
+  padding: 20px;
+  max-width: 350px;
+  @include brutal-border($primaryColor, 4px);
+
+  .card-header {
+    border-bottom: $border-2;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    .badge {
+      display: inline-block;
+      background: $primaryColor;
+      color: $backgroundColor;
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .card-body {
+    .description {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+
+  .card-footer {
+    margin-top: 20px;
+
+    .btn-action {
+      display: block;
+      text-align: center;
+      background: $primaryColor;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 900;
+      border: $border-2;
+
+      &:hover {
+        background: #fff;
+        color: $primaryColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@use "common" as *;
+
+.brutal-box-wrapper {
+  padding: 2%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  min-height: fit-content; // Full viewport height for centering
+}
+
+.brutal-box {
+  // 1. The Base
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // 2. The Signature Border (Thick & Sharp)
+  @include brutal-border($primaryColor, $border-4);
+
+  // 3. The Hard Shadow (No blur, 100% opacity)
+  // Offset to the bottom right
+  box-shadow: 10px 10px 0px $primaryColor;
+
+  // 4. Typography
+  color: $primaryColor;
+  font-family: "JetBrains Mono", monospace; // Fits your NvChad vibe
+
+  transition: all 0.1s ease-in-out;
+
+  .brutal-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0;
+    border-bottom: 3px solid $primaryColor;
+    padding-bottom: 0.5rem;
+  }
+
+  // 5. The "Interactive" Feel
+  &:hover {
+    // Lift the box up and to the left
+    transform: translate(-4px, -4px);
+    // Make the shadow "grow" to compensate
+    box-shadow: 14px 14px 0px $primaryColor;
+  }
+
+  &:active {
+    // Press the box down into the shadow
+    transform: translate(10px, 10px);
+    box-shadow: 0px 0px 0px $primaryColor;
+  }
+}
+
+.brutal-btn {
+  margin-top: 1rem;
+  background: $primaryColor;
+  color: $backgroundColor;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}

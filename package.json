@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "prettier-plugin-go-template": "^0.0.15"
+  },
+  "dependencies": {
+    "sass": "^1.98.0"
+  }
+}
