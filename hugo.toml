@@ -1,3 +1,7 @@
 baseURL = 'https://tuffruntime.github.io/tdng/'
 title = 'TUFF'
 theme = "tdng"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
