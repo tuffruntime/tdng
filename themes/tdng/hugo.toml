@@ -29,3 +29,13 @@ weight = 30
   [languages.vi]
     languageName = 'Tiếng Việt'
     weight = 2
+
+[params]
+  [params.styles]
+    fontAwesomeUrl = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
+  [params.socials]
+    github = 'https://github.com/tuffruntime'
+    linkedin = 'https://www.linkedin.com/in/thachdang/'
+    instagram = 'https://www.instagram.com/hi_imtuff/'
+    email = 'thachphudang@gmail.com'
+    resume = 'https://drive.google.com/file/d/1Xo9n8sHj2l7mLh3a5Zt9v8w6y4x2z1/view?usp=sharing'

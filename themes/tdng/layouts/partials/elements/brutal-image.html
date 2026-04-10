@@ -1,0 +1,7 @@
+<div class="brutal-image">
+  {{ $image := resources.Get (printf "images/%s" .image_name) }}
+  
+  {{ with $image }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+  {{ end }}
+</div>

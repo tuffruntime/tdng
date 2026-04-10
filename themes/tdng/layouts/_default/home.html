@@ -1,15 +1,9 @@
 {{ define "main" }}
   <div class="brutal-box-wrapper">
-  {{ partial "elements/brutal-box.html" . }}
-
-  {{ partial "elements/brutal-box.html" . }}
-
-  {{ partial "elements/brutal-box.html" . }}
-
-  {{ partial "elements/brutal-box.html" . }}
+    {{ $params:= dict 
+      "image_name" "ava_color.png"
+    }}
+    {{ partial "elements/brutal-image.html" $params }}
+    {{ partial "elements/brutal-box.html" . }}
   </div>
-  {{/*  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}  */}}
 {{ end }}

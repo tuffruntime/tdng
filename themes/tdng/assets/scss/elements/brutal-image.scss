@@ -1,0 +1,17 @@
+@use "common" as *;
+
+.brutal-image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+
+  @include brutal-border($color: $primaryColor, $border: $border-4, $noHover: true);
+
+    img {
+        max-height: 456px;
+        width: 300px;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        image-rendering: pixelated;
+    }
+}
