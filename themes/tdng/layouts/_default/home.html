@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <div class="brutal-box-wrapper">
+    {{ $params:= dict 
+      "image_name" "ava_color.png"
+    }}
+    {{ partial "elements/brutal-image.html" $params }}
+    {{ partial "elements/brutal-box.html" . }}
+  </div>
+{{ end }}

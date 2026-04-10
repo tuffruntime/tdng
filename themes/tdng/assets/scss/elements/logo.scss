@@ -1,0 +1,17 @@
+@use "common" as *;
+
+.logo-box {
+  display: inline-block;
+  text-decoration: none;
+  background-color: $backgroundColor; // Inverted colors for that "blocky" look
+  padding: 8px 16px;
+
+  .logo-text {
+    color: $primaryColor; // Light text on dark block
+    font-family: 'JetBrains Mono', monospace; // Terminal vibe
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: -1px; // Tightening the letters makes it feel like a solid block
+    text-transform: uppercase;
+  }
+}
