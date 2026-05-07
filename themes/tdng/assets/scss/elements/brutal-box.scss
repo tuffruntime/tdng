@@ -21,7 +21,7 @@
   pointer-events: auto;
 
   // 2. The Signature Border (Thick & Sharp)
-  @include brutal-border($primaryColor, $border-4);
+  @include brutal-border($primaryColor, $border-4, false, true);
 
   // 3. The Hard Shadow (No blur, 100% opacity)
   // Offset to the bottom right
@@ -50,12 +50,12 @@
   }
 
   // 5. The "Interactive" Feel
-  &:hover {
-    // Lift the box up and to the left
-    transform: translate(-4px, -4px);
-    // Make the shadow "grow" to compensate
-    box-shadow: 14px 14px 0px $primaryColor;
-  }
+  // &:hover {
+  //   // Lift the box up and to the left
+  //   transform: translate(-4px, -4px);
+  //   // Make the shadow "grow" to compensate
+  //   box-shadow: 14px 14px 0px $primaryColor;
+  // }
 
   &:active {
     // Press the box down into the shadow

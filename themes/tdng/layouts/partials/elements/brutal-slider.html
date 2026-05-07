@@ -1,0 +1,82 @@
+<div class="slider-container">
+  <button class="slider-nav-btn slider-nav-prev" aria-label="Previous slide">
+    <i class="fa-solid fa-angle-left"></i>
+  </button>
+  <swiper-container class="brutal-slider" init="false">
+    {{ range .Params.slides }}
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>{{ .title }}</h2>
+        <p>{{ .description }}</p>
+      </div>
+    </swiper-slide>
+    {{ end }}
+    
+    <!-- Placeholder slides for preview -->
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Design System</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Typography Rules</h2>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Color Palette</h2>
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Component Library</h2>
+        <p>Consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Brutalism Concept</h2>
+        <p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Visual Hierarchy</h2>
+        <p>Tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat duis.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Interactive States</h2>
+        <p>Aute irure dolor in reprehenderit in voluptate velit esse quam nihil molestiae.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Accessibility</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Responsive Design</h2>
+        <p>Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  <button class="slider-nav-btn slider-nav-next" aria-label="Next slide">
+    <i class="fa-solid fa-angle-right"></i>
+  </button>
+</div>

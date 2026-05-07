@@ -3,11 +3,15 @@
 @use "elements/header";
 @use "elements/logo";
 
+// Footer
+@use "elements/footer";
+
 // Elements
 @use "elements/brutal-card";
 @use "elements/brutal-box";
 @use "elements/brutal-image";
 @use "elements/brutal-socials";
+@use "elements/brutal-slider";
 
 * {
   background-color: $backgroundColor;
