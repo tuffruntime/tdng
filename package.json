@@ -1,9 +1,12 @@
 {
-  "devDependencies": {
-    "prettier": "^3.8.1",
-    "prettier-plugin-go-template": "^0.0.15"
-  },
+  "name": "tdng",
+  "version": "1.0.0",
   "dependencies": {
-    "sass": "^1.98.0"
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "@tailwindcss/cli": "^4.3.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "prettier": "^3.8.1",
+    "prettier-plugin-go-template": "^0.0.15",
+    "tailwindcss": "^4.3.0"
   }
 }

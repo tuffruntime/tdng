@@ -1,39 +1,44 @@
-<footer class="footer">
+<footer
+  id="page-footer"
+  class="relative flex flex-col items-center justify-center border-t-3 border-[var(--primary-color)] py-4 text-center"
+>
   <script>
-  const el = document.querySelector('.brutal-slider');
-  const params = {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-    breakpoints: {
-      // Mobile: 1 item per view
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 10,
+    const el = document.querySelector("#home-slider");
+    const params = {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        // Mobile: 1 item per view
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // Tablet: 2 items per view
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        // Desktop: 3 items per view
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
       },
-      // Tablet: 2 items per view
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      // Desktop: 3 items per view
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-    injectStyles: [
-      `.swiper-button-next,
+      injectStyles: [
+        `.swiper-button-next,
        .swiper-button-prev { color: #4A4A4A; }`
-    ],
-     navigation: {
-      nextEl: '.slider-nav-next',
-      prevEl: '.slider-nav-prev',
-    },
-  };
+      ],
+      navigation: {
+        nextEl: ".slider-nav-next",
+        prevEl: ".slider-nav-prev"
+      }
+    };
 
-  Object.assign(el, params);
-  el.initialize();
+    Object.assign(el, params);
+    el.initialize();
   </script>
-  <p>Copyright {{ now.Year }}. All rights reserved.</p>
+  <p id="copyright" class="text-lg font-semibold">
+    Copyright {{ now.Year }}. All rights reserved.
+  </p>
 </footer>

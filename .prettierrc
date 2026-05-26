@@ -9,7 +9,8 @@
     "arrowParens": "always",
     "proseWrap": "preserve",
     "plugins": [
-        "prettier-plugin-go-template"
+        "prettier-plugin-go-template",
+        "prettier-plugin-tailwindcss"
     ],
     "overrides": [
         {
@@ -18,12 +19,6 @@
             ],
             "options": {
                 "parser": "go-template"
-            }
-        },
-        {
-            "files": "*.scss",
-            "options": {
-                "parser": "scss"
             }
         }
     ]
