@@ -24,10 +24,10 @@ weight = 30
 
 [languages]
   [languages.en]
-    languageName = 'English'
+    label = 'English'
     weight = 1
   [languages.vi]
-    languageName = 'Tiếng Việt'
+    label = 'Tiếng Việt'
     weight = 2
 
 [params]
