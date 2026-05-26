@@ -3,10 +3,6 @@ public/
 resources/
 *.log
 
-# SCSS
-*.css
-*.css.map
-
 # OS
 .DS_Store
 Thumbs.db
