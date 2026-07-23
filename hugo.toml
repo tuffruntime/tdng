@@ -1,11 +1,11 @@
 baseURL = 'https://tuffruntime.github.io/tdng/'
 title = 'TUFF'
 theme = "tdng"
-
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
-  
 [build]
   [build.buildStats]
     enable = true
@@ -20,6 +20,60 @@ theme = "tdng"
     source = 'assets'
     target = 'assets'
   [[module.mounts]]
+    source = 'content'
+    target = 'content'
+  [[module.mounts]]
+    source = 'archetypes'
+    target = 'archetypes'
+  [[module.mounts]]
     disableWatch = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
+[languages]
+  [languages.en]
+    label = 'English'
+    weight = 1
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        identifier = "home"
+        name = 'Home'
+        pageRef = '/'
+        weight = 10
+      [[languages.en.menus.main]]
+        identifier = "posts"
+        name = 'Posts'
+        pageRef = '/posts/'
+        weight = 20
+      [[languages.en.menus.main]]
+        identifier = "tags"
+        name = 'Tags'
+        pageRef = '/tags'
+        weight = 30
+  [languages.vi]
+    label = 'Tiếng Việt'
+    weight = 2
+    [languages.vi.menus]
+      [[languages.vi.menus.main]]
+        identifier = "home"
+        name = 'Trang chủ'
+        pageRef = '/'
+        weight = 10
+      [[languages.vi.menus.main]]
+        identifier = "posts"
+        name = 'Bài viết'
+        pageRef = '/posts/'
+        weight = 20
+      [[languages.vi.menus.main]]
+        identifier = "tags"
+        name = 'Chủ đề'
+        pageRef = '/tags'
+        weight = 30
+[params]
+  [params.styles]
+    fontAwesomeUrl = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
+  [params.socials]
+    github = 'https://github.com/tuffruntime'
+    linkedin = 'https://www.linkedin.com/in/thachdang/'
+    instagram = 'https://www.instagram.com/hi_imtuff/'
+    email = 'thachphudang@gmail.com'
+    resume = ''

@@ -3,7 +3,7 @@
 >
   <div id="page-logo" class="p-5">
     <a
-      href="{{ .Site.BaseURL }}"
+      href="{{ .Site.BaseURL | relLangURL }}"
       class="logo-box text-5xl font-bold text-[var(--primary-color)] no-underline"
     >
       {{ printf "%s | %s" .Site.Title (i18n "subtitle") }}
