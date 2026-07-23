@@ -1,0 +1,18 @@
+{ 
+    "subtitle": "CV, blog, and more",
+    "jobTitle": " Senior backend developer",
+    "jobSubtitle": "Backend Developer (5+ years) | PHP, JavaScript/TypeScript | Shopware & commercetools | Vietnam",
+    "workPrinciples": {
+        "detail": "The little things matter.",
+        "detailSupport": "I believe great software is shaped by careful attention to detail, from clean code to thoughtful user experiences.",
+        "problemSolving": "Every bug tells a story.",
+        "problemSolvingSupport": "I enjoy uncovering the root cause of complex problems and turning them into simple, reliable solutions.",
+        "teamwork": "Great software is never a solo act.",
+        "teamworkSupport": "The best products are built through collaboration, open communication, and a willingness to learn from one another.",
+        "communication": "Clear words build better code.",
+        "communicationSupport": "Whether discussing ideas, reviewing code, or solving issues, clear communication keeps everyone moving in the same direction."
+    },
+    "footer": {
+        "copyright": "&copy; 2026 Thach Phu Dang. Designed and developed with ❤️ at Vietnam."
+    }
+}

@@ -177,6 +177,9 @@
     }
   }
 
+  .swiper-wrapper {
+    align-items: center;
+  }
   /* End Slider */
 }
 
