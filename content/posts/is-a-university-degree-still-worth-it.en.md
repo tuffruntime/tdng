@@ -1,11 +1,10 @@
 +++
-title = 'Is a University Degree Still Worth It'
+title = 'Is a University Degree Still the Right Choice for Young People?'
 date = 2026-07-24T02:48:10+07:00
 draft = true
 +++
-# Is a University Degree Still the Right Choice for Young People?
 
-Every admission season, the same question resurfaces: *Is going to university still worth it?* Some people believe that a university degree remains the safest path to a stable career, while others point to successful programmers, entrepreneurs, and content creators who built impressive careers without ever earning one. Somewhere between these two perspectives, I think the real question isn't whether university has lost its value, but **how that value has changed over time**.
+Every admission season, the same question resurfaces: *Is going to university still worth it?* Some people believe that a university degree remains the safest path to a stable career, while others point to successful programmers, entrepreneurs, and content creators who built impressive careers without ever earning one. <!--more--> Somewhere between these two perspectives, I think the real question isn't whether university has lost its value, but **how that value has changed over time**.
 
 If we look back ten or twenty years, attending university was almost the default choice. Knowledge was largely confined to classrooms, textbooks, and academic institutions. If you wanted to learn something new, enrolling in a university or a training center was often your only realistic option. Today, however, all it takes is a laptop and an internet connection to access world-class courses, research papers, and thriving professional communities. With the rise of AI-powered learning tools, teaching yourself a new skill has become easier than ever. As a result, universities no longer hold a monopoly on knowledge.
 

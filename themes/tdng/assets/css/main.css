@@ -176,11 +176,15 @@
         0 0 0 5px var(--primary-color);
     }
   }
-
-  .swiper-wrapper {
-    align-items: center;
-  }
   /* End Slider */
+
+  .posts-tbl-bdr {
+    transition: background-color 0.15s steps(2);
+  }
+
+  .post {
+    max-width: min(100%, 900px);
+  }
 }
 
 @layer base {

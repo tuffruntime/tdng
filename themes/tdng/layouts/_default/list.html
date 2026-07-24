@@ -1,8 +1,41 @@
 {{ define "main" }}
-  <h1 class="font-bold text-2xl md:text-3xl">{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    <!-- {{ .Summary }} -->
-  {{ end }}
+  <div class="posts mx-6 text-justify md:mx-10">
+    <div class="border-bottom mb-4">
+      <h1 class="text-2xl font-bold md:text-3xl">{{ .Title }}</h1>
+      <p class="text-lg md:text-xl">
+        {{ .Content }}
+      </p>
+    </div>
+
+    <!-- Table layout -->
+    <table class="w-full border-collapse">
+      <thead>
+        <tr>
+          <th class="text-left text-lg md:text-xl font-semibold border-b-2 border-[var(--primary-color)] pb-2">
+            {{ i18n "list.table.header.title" }} ({{(len .Pages)}})
+          </th>
+          <th class="text-left text-lg md:text-xl font-semibold border-b-2 border-[var(--primary-color)] pb-2">
+            {{ i18n "list.table.header.date" }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Pages }}
+          <tr class="posts-tbl-bdr not-last:border-b-2 border-dotted border-[var(--primary-color)] hover:border-white hover:bg-[var(--primary-color)] hover:text-white">
+            <td class="py-4 pr-4 border-r-2 border-dotted border-[var(--primary-color)] hover:border-white">
+              <a href="{{ .RelPermalink }}" class="text-lg md:text-xl">
+                <h2 class="text-lg md:text-xl font-bold pb-2">{{ .Title }}</h2>
+                {{ .Summary }}
+              </a>
+            </td>
+            <td class="py-4 pl-4 text-lg md:text-xl">
+              {{ .Date.Format "Jan 2006" }}
+            </td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+    <!-- End table layout -->
+    </div>
+  </div>
 {{ end }}
