@@ -1,4 +1,4 @@
-baseURL = 'https://tuffruntime.github.io/tdng/'
+baseURL = 'https://tuffruntime.github.io/'
 title = 'TUFF'
 theme = "tdng"
 defaultContentLanguage = "en"
