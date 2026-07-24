@@ -8,7 +8,36 @@
 }
 
 @layer components {
+  /* Language Switcher */
+  .language {
+    position: relative;
+    &.active::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 30%;
+      border-bottom: 2px solid var(--primary-color);
+      width: 65%;
+      height: 1px;
+      color: var(--primary-color);
+    }
+
+    &:not(.active) {
+      opacity: 0.65;
+    }
+  }
+  /* End language switcher */
+
   /* Brutal Buttons */
+  .brutal-button {
+    transition: all 0.1s ease;
+
+    &:active {
+      transform: translate(6px, 6px);
+      box-shadow: 0px 0px 0px var(--primary-color);
+    }
+  }
+
   .brutal-button-2 {
     border: 2px solid var(--primary-color);
     padding: 0.5rem 1rem;
@@ -47,7 +76,6 @@
     padding: 1rem;
     box-shadow: 10px 10px 0 var(--primary-color);
     display: inline-block;
-    transition: all 0.1s ease;
 
     i {
       font-size: 1.5rem;
@@ -64,11 +92,6 @@
       i {
         color: var(--background-color);
       }
-    }
-
-    &:active {
-      transform: translate(6px, 6px);
-      box-shadow: 0px 0px 0px var(--primary-color);
     }
   }
 
@@ -178,13 +201,24 @@
   }
   /* End Slider */
 
+  .post-justify {
+    text-justify: inter-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+  }
+  
+  /* Post Table Border */
   .posts-tbl-bdr {
     transition: background-color 0.15s steps(2);
   }
+  /* End Post Table Border */
 
+  /* Post */
   .post {
     max-width: min(100%, 900px);
   }
+  /* End Post */
 }
 
 @layer base {
