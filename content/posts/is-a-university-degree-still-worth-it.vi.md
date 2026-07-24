@@ -1,11 +1,10 @@
 +++
-title = 'Bằng đại học có còn đáng để theo đuổi?'
+title = 'Liệu bằng đại học có còn là lựa chọn đúng đắn cho người trẻ?'
 date = 2026-07-24T02:48:10+07:00
 draft = false
 +++
-# Liệu bằng đại học có còn là lựa chọn đúng đắn cho người trẻ?
 
-Mỗi mùa tuyển sinh, câu hỏi *“Có nên học đại học không?”* lại xuất hiện trên khắp các diễn đàn. Có người cho rằng đại học là con đường ngắn nhất để có một công việc ổn định. Cũng có người phản bác bằng những câu chuyện về các lập trình viên, nhà sáng tạo nội dung hay doanh nhân thành công dù không sở hữu tấm bằng đại học.
+Mỗi mùa tuyển sinh, câu hỏi *“Có nên học đại học không?”* lại xuất hiện trên khắp các diễn đàn. Có người cho rằng đại học là con đường ngắn nhất để có một công việc ổn định. Cũng có người phản bác bằng những câu chuyện về các lập trình viên, nhà sáng tạo nội dung hay doanh nhân thành công dù không sở hữu tấm bằng đại học. <!--more-->
 
 Giữa hai luồng quan điểm ấy, mình nghĩ câu trả lời không nằm ở việc đại học còn giá trị hay không, mà nằm ở việc **giá trị của nó đã thay đổi như thế nào**.
 

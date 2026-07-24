@@ -12,7 +12,15 @@
         "communication": "Giao tiếp rõ ràng tạo nên những dòng mã tốt hơn",
         "communicationSupport": "Dù là trao đổi ý tưởng, đánh giá mã nguồn hay giải quyết sự cố, giao tiếp hiệu quả luôn giúp mọi người cùng hướng về một mục tiêu chung"
     },
+        "list": {
+        "table": {
+            "header": {
+                "title": "Tiêu đề",
+                "date": "Ngày đăng"
+            }
+        }
+    },
     "footer": {
-        "copyright": "&copy; 2026 Đặng Phú Thạch. Được thiết kế và phát triển với ❤️ tại Việt Nam."
+        "copyright": "&copy; 2026 Đặng Phú Thạch. Được thiết kế và phát triển tại Việt Nam."
     }
 }

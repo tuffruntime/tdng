@@ -12,7 +12,15 @@
         "communication": "Clear words build better code.",
         "communicationSupport": "Whether discussing ideas, reviewing code, or solving issues, clear communication keeps everyone moving in the same direction."
     },
+    "list": {
+        "table": {
+            "header": {
+                "title": "Title",
+                "date": "Date"
+            }
+        }
+    },
     "footer": {
-        "copyright": "&copy; 2026 Thach Phu Dang. Designed and developed with ❤️ at Vietnam."
+        "copyright": "&copy; 2026 Thach Phu Dang. Designed & developed in Vietnam."
     }
 }
