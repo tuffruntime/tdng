@@ -1,19 +1,35 @@
 {{- /*
-Renders a menu for the given menu ID.
+  Renders a menu for the given menu ID.
 
-@context {page} page The current page.
-@context {string} menuID The menu ID.
+  @context {page} page The current page.
+  @context {string} menuID The menu ID.
 
-@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  @example: {{ partial "menu.html" (dict "menuID" "main" "page" .)
+}}
 */}}
-
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
   <nav>
-    <ul class="flex flex-col flex-row gap-10 text-2xl flex-wrap md:flex-nowrap justify-center md:justify-start">
+    <ul
+      class="flex flex-col flex-row flex-wrap items-center justify-center gap-10 text-2xl md:flex-nowrap md:justify-start"
+    >
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      <li class="mx-4">
+          {{- $currentLang := site.Language.Lang -}}
+          {{- range $i, $translation := $page.AllTranslations -}}
+            {{- if gt $i 0 -}}
+              <span class="mx-2">|</span>
+            {{- end -}}
+            <a
+              href="{{ .RelPermalink }}"
+              class="language language-{{ .Lang }}  {{ if eq .Lang $currentLang }}
+                active
+              {{ end }} font-semibold"
+              >{{- .Lang | upper -}}</a>
+          {{- end -}}
+      </li>
     </ul>
   </nav>
 {{- end }}
@@ -27,7 +43,7 @@ Renders a menu for the given menu ID.
     {{- end }}
     {{- if $page.IsMenuCurrent .Menu . }}
       {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
+    {{- else if $page.HasMenuCurrent .Menu . }}
       {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
     {{- end }}
     {{- $name := .Name }}
@@ -36,14 +52,15 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li class="brutal-button-2 md:brutal-button-4 font-semibold">
+    <li class="brutal-button brutal-button-2 md:brutal-button-4 font-semibold">
       <a
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
-      >{{ $name }}</a>
+        >{{ $name }}</a
+      >
       {{- with .Children }}
         <ul>
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}

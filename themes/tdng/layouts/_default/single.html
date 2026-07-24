@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="post mx-6 my-4 text-justify md:mx-10">
+  <article class="post post-justify mx-6 my-4 md:mx-10">
     <div class="post-head border-bottom">
       <h1 class="text-2xl font-bold md:text-3xl">{{ .Title }}</h1>
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
