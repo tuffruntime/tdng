@@ -52,8 +52,8 @@
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li>
-      <a class="brutal-button brutal-button-2 md:brutal-button-4 font-semibold"
+    <li class="relative cursor-pointer brutal-button brutal-button-2 md:brutal-button-4 font-semibold">
+      <a class="after:absolute after:inset-0 after:content-['']"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
