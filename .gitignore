@@ -2,6 +2,9 @@
 public/
 resources/
 *.log
+resources/_gen/
+.hugo_build.lock
+hugo_stats.json
 
 # OS
 .DS_Store
