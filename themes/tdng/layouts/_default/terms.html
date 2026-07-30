@@ -12,26 +12,25 @@
       <thead>
         <tr>
           <th class="text-left text-lg md:text-xl font-semibold border-b-2 border-[var(--primary-color)] pb-2">
-            {{ i18n "list.table.header.title" }} ({{(len .Pages)}})
+            {{ .Title }} ({{ len .Data.Terms }})
           </th>
           <th class="text-left text-lg md:text-xl font-semibold border-b-2 border-[var(--primary-color)] pb-2">
-            {{ i18n "list.table.header.date" }}
+            {{ .Params.PostCount }}
           </th>
         </tr>
       </thead>
       <tbody>
-        {{ range .Pages }}
+        {{ range .Data.Terms.Alphabetical }}
           <tr class="posts-tbl-bdr not-last:border-b-2 border-dotted border-[var(--primary-color)] hover:border-white hover:bg-[var(--primary-color)] hover:text-white">
             <td class="relative py-4 pr-4 md:pl-2 border-r-2 border-dotted border-[var(--primary-color)] hover:border-white">
-              <a href="{{ .RelPermalink }}" class="text-lg md:text-xl after:absolute after:inset-0 after:content-['']">
-                <h2 class="text-lg md:text-xl font-bold pb-2">{{ .Title }}</h2>
-                {{ .Summary }}
+              <a href="{{ .Page.RelPermalink }}" class="text-lg md:text-xl after:absolute after:inset-0 after:content-['']">
+                <h2 class="text-lg md:text-xl font-bold pb-2">{{ .Page.LinkTitle }}</h2>
               </a>
             </td>
             <td class="relative py-4 pl-4 text-lg md:text-xl">
-              <a href="{{ .RelPermalink }}" class="text-lg md:text-xl after:absolute after:inset-0 after:content-['']">
-                {{ .Date.Format "Jan 2006" }}
-              </a>
+                <a href="{{ .Page.RelPermalink }}" class="text-lg md:text-xl after:absolute after:inset-0 after:content-['']">
+                    <p>{{ .Count }}</p>
+                </a>
             </td>
           </tr>
         {{ end }}

@@ -207,7 +207,23 @@
     hyphens: auto;
     text-align: justify;
   }
-  
+
+  /* List */
+  blockquote {
+    margin: 0.8rem 0;
+    padding-left: 1.25rem;
+
+    border-left: 1px solid #999;
+
+    font-style: italic;
+    color: #555;
+  }
+
+  blockquote p {
+    margin: 0;
+  }
+  /* End List */
+
   /* Post Table Border */
   .posts-tbl-bdr {
     transition: background-color 0.15s steps(2);

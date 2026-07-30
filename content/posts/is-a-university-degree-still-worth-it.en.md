@@ -15,6 +15,14 @@ It's also worth remembering that not every profession can replace formal educati
 
 For that reason, I no longer see university as a mandatory step in life. Instead, I see it as **an investment**. Like any investment, it comes with costs, time commitments, and expected returns. For some people, spending four years at university provides the foundation they need for a successful career. For others, those same four years might be better spent gaining work experience, building projects, or following a personalized learning path. Neither choice is universally right or wrong.
 
-Perhaps, then, we should stop asking, *"Should everyone go to university?"* and start asking, *"Is university the best path for the goals I want to achieve?"* In a world where knowledge is only a few clicks away, what truly sets people apart is no longer the institution they attended, but their willingness to keep learning, adapt to change, and transform knowledge into real value.
+Perhaps, then, we should stop asking:
+
+> *"Should everyone go to university?"*
+
+And start asking:
+
+> *"Is university the best path for the goals I want to achieve?"*
+
+In a world where knowledge is only a few clicks away, what truly sets people apart is no longer the institution they attended, but their willingness to keep learning, adapt to change, and transform knowledge into real value.
 
 University is no longer the only road to success, but neither has it become meaningless. It is simply one of many paths available to today's young generation. Ultimately, what matters most isn't where you learn, but whether you continue learning, keep growing, and take responsibility for the choices you make.
