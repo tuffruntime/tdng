@@ -71,7 +71,7 @@ defaultContentLanguageInSubdir = false
 [params]
   [params.goatcounter] 
     goatcounter = 'https://thachphudang.goatcounter.com/count'
-    source = 'https://gc.zgo.at/count.js'
+    source = '//gc.zgo.at/count.js'
   [params.styles]
     fontAwesomeUrl = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
   [params.socials]
