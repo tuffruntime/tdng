@@ -42,7 +42,6 @@
       "after:absolute",
       "after:content-['']",
       "after:inset-0",
-      "ancestor",
       "background-[var(--background-color)]",
       "block",
       "border-[var(--primary-color)]",
